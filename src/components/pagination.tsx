@@ -48,7 +48,7 @@ export function Pagination({
             disabled={pageIndex === 0}
           >
             <ChevronLeft className="h-4 w-4" />
-            <span className="sr-only">Próxima página</span>
+            <span className="sr-only">Página anterior</span>
           </Button>
           <Button
             onClick={() => onPageChange(pageIndex + 1)}
@@ -57,7 +57,7 @@ export function Pagination({
             disabled={pages <= pageIndex + 1}
           >
             <ChevronRight className="h-4 w-4" />
-            <span className="sr-only">Página anterior</span>
+            <span className="sr-only">Próxima página</span>
           </Button>
           <Button
             onClick={() => onPageChange(pages - 1)}
