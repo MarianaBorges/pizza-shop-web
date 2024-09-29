@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Pizza Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O Pizza Shop é um sitema de gestão de venda de pizza que provê un dashboard para a análise de dados relacionados as vendas.
 
-Currently, two official plugins are available:
+Desenvolvido durante o módulo Desenvolvimento Web Front-end/Integrando Front-end e Back-end do curso MBA Rocketseat Full-stack. Nele foram exercitados conseitos de consumo de API com [axios](https://www.npmjs.com/package/axios) e [react query](https://tanstack.com/query/latest/docs/framework/react/overview), desenvolvmento de interfaces com [Radix](https://www.radix-ui.com/) e [Shadcn UI](https://ui.shadcn.com/) e desenvolvimentos de testes com [Vitest](https://vitest.dev/) e [PlayWright](https://playwright.dev/docs/intro).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rodando o Projeto
 
-## Expanding the ESLint configuration
+- Seguir o passo a passo [aqui](https://github.com/rocketseat-education/pizzashop-api) para rodar o back-end da aplicação localmente
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
+#Clonar a aplicação
+git clone 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#Abrir pasta do projeto
+cd pizza-shop-web
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Instalar dependencias do projeto
+npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+#Rodar aplicação
+npm run dev
+```
+## Rodando Testes unitários
+
+```
+#Rodar aplicação
+npm run test
+```
+## Rodando Testes E2E
+
+
+```
+#Rodar aplicação
+npm run dev:test
+
+#Rodar teste
+npx playwright test --ui
 ```
