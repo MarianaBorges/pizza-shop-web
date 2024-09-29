@@ -10,7 +10,7 @@ Desenvolvido durante o módulo Desenvolvimento Web Front-end/Integrando Front-en
 
 ```
 #Clonar a aplicação
-git clone 
+git clone git@github.com:MarianaBorges/pizza-shop-web.git
 
 #Abrir pasta do projeto
 cd pizza-shop-web
